@@ -1,0 +1,211 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Inconsolata', monospace;
+	display: grid;
+	grid-template-columns: 18% 64% 18%;
+	height: 723px;
+}
+
+#game-container{
+	grid-column-start: 2;
+	grid-column-end: 2;
+	display: grid;
+	grid-template-rows: 10% 60% 20% 10%;
+}
+
+#Inventory{
+	grid-column-start: 3;
+	grid-column-end: 3;
+	background-color: #6B7FD7;  
+	border-left: solid black 2px;		
+}
+
+#Leftside{
+	grid-column-start: 1;
+	grid-column-end: 1;
+	background-color: #6B7FD7;	
+	border-right: solid black 2px;		
+}
+
+#title{
+	padding-top: 15px;
+	grid-row-start: 1;
+	grid-row-end: 1;
+	background-color: #0E0E52;
+	border-bottom: solid black 2px;
+	text-align: center;
+	color: white;	
+}
+
+#Gamescreen{
+	grid-row-start: 2;
+	grid-row-end: 2;	
+}
+
+#Currentscreen{
+	width: 990px;
+	height: 435px;
+}
+
+#Textbar{
+	grid-row-start: 3;
+	grid-row-end: 3;
+	background-color: white;
+	border: solid black 5px;
+	border-left: solid black 2px;
+	border-right: solid black 2px;		
+}
+
+#game-buttons{
+	grid-row-start: 4;
+	grid-row-end: 4;
+}
+
+#button1{
+	font-family: 'Inconsolata', monospace;  	
+	background-color: #D9F0FF;
+	display: inline-block;
+	width: 115px;
+	height: 65px;
+	margin-top: 2px;
+	margin-right: 2%;
+	font-size: 12px;
+}
+
+#button2{
+	font-family: 'Inconsolata', monospace;
+	background-color: #D9F0FF;
+	display: inline-block;
+	width: 115px;
+	height: 65px;
+	font-size: 12px;		
+}
+
+#button3{	
+	font-family: 'Inconsolata', monospace;
+	background-color: #D9F0FF;
+	display: inline-block;
+	width: 115px;
+	height: 65px;
+	margin-left: 2%;
+	font-size: 12px;
+}
+
+#description{
+	margin: 5px;
+}
+
+#Inventorytitle{
+	color: white;
+	text-align: center;
+	margin-top: 15px;
+}
+
+#ButtonPosition{
+	background-color: #0E0E52;
+	text-align: center;
+	height: 72px;	
+}
+
+#inventoryItem{
+	position: absolute;
+	width: 2%;
+	display: none; 
+}
+
+#Exit{
+	position: absolute;
+	width: 4%;
+	display: none;
+	top: 22%;
+	left: 34%;
+}
+
+#Keys{
+	position: absolute;
+	width: 2%;
+	display: none;
+}
+
+#Rope{
+	position: absolute;
+	width: 2.5%;
+	display: none;
+	transform: rotate(320deg);
+}
+
+#Person{
+	position: absolute;
+	width: 18%;
+	display: none;
+	bottom: 27%;
+	right: 39%;
+}
+
+#PaperText{
+	position: absolute;
+	display: none;
+	top: 34%;
+	left: 35.3%;
+	z-index: 1;
+	font-family: 'Amatic SC', cursive;
+	font-size: 30px;
+}
+
+#Watch{
+	display: none;
+}
+
+#Square{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	border: solid silver 5px;
+	background-color: white;
+	left: 20%;
+	top: 250px;
+	z-index: 1;
+}
+
+#Getallen{
+	width: 100%;
+	z-index: 1;
+}
+
+#Strap{
+	position: relative;
+	left: 35%;
+	top: 20px;
+	width: 75px;
+	height: 300px;
+	background-color: black;
+}
+
+#LargePointer{
+	position: relative;
+	bottom: 61px;
+	left: 50px;
+	width: 50px;
+	height: 5px;
+	border-radius: 20px;
+	background-color: black;
+	background-color: black;transform: rotate(90deg);
+}
+
+#SmallPointer{
+	position: relative;
+	bottom: 80px;
+	left: 35px;
+	width: 40px;
+	height: 5px;
+	border-radius: 20px;
+	background-color: black;
+	background-color: black;transform: rotate(180deg);
+}
